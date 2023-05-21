@@ -6625,7 +6625,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.46, y: 0.47}
-    newSize: {x: 3.6847985, y: 0.47}
+    newSize: {x: 11.453605, y: 0.47}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
@@ -6679,7 +6679,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 3.6847985, y: 0.47}
+  m_Size: {x: 11.453605, y: 0.47}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -6693,7 +6693,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151185300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.2915, y: -4.49, z: -3}
+  m_LocalPosition: {x: 22.4144, y: -4.49, z: -3}
   m_LocalScale: {x: 1.0613933, y: 1.0492897, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7358,7 +7358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.0627451, g: 0.043137256, b: 0.38039216, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8843,7 +8843,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.46, y: 0.47}
-    newSize: {x: 27.703512, y: 0.43410185}
+    newSize: {x: 28.86085, y: 0.45149198}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
@@ -8897,7 +8897,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 27.703512, y: 0.43410185}
+  m_Size: {x: 28.86085, y: 0.45149198}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8911,7 +8911,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561842767}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4022, y: 4.5661, z: -2}
+  m_LocalPosition: {x: 2.4504, y: 4.5486, z: -2}
   m_LocalScale: {x: 1.8113805, y: -2.0091684, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9324,7 +9324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.0627451, g: 0.043137256, b: 0.38039216, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9344,7 +9344,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Time Remmaing:'
+  m_Text: 'Time Remaining:'
 --- !u!222 &1650815124
 CanvasRenderer:
   m_ObjectHideFlags: 0
