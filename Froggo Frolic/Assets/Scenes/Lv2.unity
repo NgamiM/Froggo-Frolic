@@ -560,7 +560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83795275}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.3, y: 1.4, z: -2}
+  m_LocalPosition: {x: -14.05, y: 1.42, z: -2}
   m_LocalScale: {x: 2.1793, y: 2.4898, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4009,6 +4009,7 @@ GameObject:
   - component: {fileID: 745700494}
   - component: {fileID: 745700493}
   - component: {fileID: 745700496}
+  - component: {fileID: 745700497}
   m_Layer: 0
   m_Name: Checkpoint (Flag Out) (64x64)_0
   m_TagString: Untagged
@@ -4130,6 +4131,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &745700497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745700492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b6e523b692f4644a2dabbf9ae7189f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObjectName: Run (32x32)_0
+  sceneName: Lv3
 --- !u!1 &815341578
 GameObject:
   m_ObjectHideFlags: 0
