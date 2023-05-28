@@ -46,7 +46,7 @@ public class OnKeyPress_MoveGravity : MonoBehaviour
         }
         if (Input.GetKey("left"))
         {
-            nowMode = rightAnime.;
+            nowMode = rightAnime;
             stepSFX.Play();
             vx = -speed;
             leftFlag = true;

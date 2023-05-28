@@ -583,7 +583,6 @@ GameObject:
   - component: {fileID: 83795281}
   - component: {fileID: 83795280}
   - component: {fileID: 83795279}
-  - component: {fileID: 83795284}
   - component: {fileID: 83795285}
   - component: {fileID: 83795286}
   - component: {fileID: 83795287}
@@ -694,6 +693,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60675b9bea15fb4c8defcdb7aaea461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpAnime: frogWallJump
+  rightAnime: frogRun
   speed: 4
   jumppower: 6
   jumpSFX: {fileID: 83795286}
@@ -773,20 +774,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.17184472, y: 0.03638746}
   m_EdgeRadius: 0
---- !u!114 &83795284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83795275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0fe043e141fb19489517db64b145239, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpAnime: frogWallJump
-  rightAnime: frogRun
 --- !u!82 &83795285
 AudioSource:
   m_ObjectHideFlags: 0
@@ -989,7 +976,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 98051a22566d90e449063401631116c6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a3e270d3a40da90458c342f9eb6d13da, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -7256,7 +7243,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.18653631, y: 0}
+  m_Offset: {x: 0.7346997, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7267,7 +7254,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.6423254, y: 0.47}
+  m_Size: {x: 18.551857, y: 0.47}
   m_EdgeRadius: 0
 --- !u!212 &1089962876
 SpriteRenderer:
@@ -9160,6 +9147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1366064211}
   - component: {fileID: 1366064210}
+  - component: {fileID: 1366064212}
   m_Layer: 0
   m_Name: Terrain (16x16) 11
   m_TagString: Untagged
@@ -9234,6 +9222,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1366064212
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366064209}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.3, y: 0.29}
+    newSize: {x: 0.3, y: 0.59132725}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0.29}
+  m_EdgeRadius: 0
 --- !u!1 &1390396447
 GameObject:
   m_ObjectHideFlags: 0
@@ -10814,7 +10828,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9669960e415ea604d81fb0784634df79, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.665
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
