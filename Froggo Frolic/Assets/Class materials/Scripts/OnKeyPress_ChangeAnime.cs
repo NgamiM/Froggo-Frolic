@@ -22,7 +22,10 @@ public class OnKeyPress_ChangeAnime : MonoBehaviour
     {
         if (Input.GetKey("space"))
         {
+
             nowMode = jumpAnime;
+
+
         }
        // if (Input.GetKey("down"))
       //  {
@@ -34,7 +37,9 @@ public class OnKeyPress_ChangeAnime : MonoBehaviour
        // }
         if (Input.GetKey("right"))
         {
+         
             nowMode = rightAnime;
+            
         }
     }
     void FixedUpdate()
