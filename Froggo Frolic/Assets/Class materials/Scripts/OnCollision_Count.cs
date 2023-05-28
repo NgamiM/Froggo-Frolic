@@ -11,7 +11,7 @@ public class OnCollision_Count : MonoBehaviour
 		if (collision.gameObject.name == targetObjectName)
 		{
 			GameCounter.value = GameCounter.value + addValue;
-			this.gameObject.SetActive(false);
+			
 		}
 	}
 
