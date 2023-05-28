@@ -18,7 +18,7 @@ public class ForeverMove_V_OnCollisionFlip : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rbody.velocity = new Vector2(speed, 0);
+        rbody.velocity = new Vector2(0, speed);
 
     }
     void OnCollisionEnter2D(Collision2D collision)
