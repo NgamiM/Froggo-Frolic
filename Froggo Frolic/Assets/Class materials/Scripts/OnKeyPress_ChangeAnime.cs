@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OnKeyPress_ChangeAnime : MonoBehaviour
 {
-    public string upAnime = "";
+    public string jumpAnime = "";
     //public string downAnime = "";
     public string rightAnime = "";
     //public string leftAnime = "";
@@ -22,7 +22,7 @@ public class OnKeyPress_ChangeAnime : MonoBehaviour
     {
         if (Input.GetKey("space"))
         {
-            nowMode = upAnime;
+            nowMode = jumpAnime;
         }
        // if (Input.GetKey("down"))
       //  {
