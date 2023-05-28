@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class OnKeyPress_MoveGravity : MonoBehaviour
 {
+        public string jumpAnime = "";
+    //public string downAnime = "";
+    public string rightAnime = "";
+    //public string leftAnime = "";
+
+    string nowMode = "";
+
+
     public float speed = 3;
     public float jumppower = 8;
 
@@ -14,11 +22,15 @@ public class OnKeyPress_MoveGravity : MonoBehaviour
     bool groundFlag = false;
     Rigidbody2D rbody;
 
+    [SerializeField] private AudioSource jumpSFX;
+    [SerializeField] private AudioSource stepSFX;
+
     // Start is called before the first frame update
     void Start()
     {
         rbody = GetComponent<Rigidbody2D>();
         rbody.constraints = RigidbodyConstraints2D.FreezeRotation;
+        nowMode = rightAnime;
     }
 
     // Update is called once per frame
@@ -27,16 +39,22 @@ public class OnKeyPress_MoveGravity : MonoBehaviour
         vx = 0;
         if (Input.GetKey("right"))
         {
+            nowMode = rightAnime;
+            stepSFX.Play();
             vx = speed;
             leftFlag = false;
         }
         if (Input.GetKey("left"))
         {
+            nowMode = rightAnime;
+            stepSFX.Play();
             vx = -speed;
             leftFlag = true;
         }
         if (Input.GetKey("space") && groundFlag)
         {
+            jumpSFX.Play();
+            nowMode = jumpAnime;
             if (pushFlag == false)
             {
                 jumpFlag = true;
@@ -50,8 +68,10 @@ public class OnKeyPress_MoveGravity : MonoBehaviour
     }
     void FixedUpdate()
     {
+        
         rbody.velocity = new Vector2(vx, rbody.velocity.y);
         this.GetComponent<SpriteRenderer>().flipX = leftFlag;
+        this.GetComponent<Animator>().Play(nowMode);
         if (jumpFlag)
         {
             jumpFlag = false;
