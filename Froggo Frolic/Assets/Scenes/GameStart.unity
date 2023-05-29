@@ -1088,7 +1088,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970811190}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.84, y: -0.64, z: 0}
+  m_LocalPosition: {x: 6.51, y: -0.58, z: 0}
   m_LocalScale: {x: 0.7236, y: 0.7236, z: 0.7236}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1576,6 +1576,7 @@ GameObject:
   - component: {fileID: 1309602249}
   - component: {fileID: 1309602252}
   - component: {fileID: 1309602251}
+  - component: {fileID: 1309602253}
   m_Layer: 0
   m_Name: SoundON
   m_TagString: Untagged
@@ -1643,7 +1644,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309602248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.8, y: 3.84, z: -1}
+  m_LocalPosition: {x: 6.63, y: 3.86, z: -1}
   m_LocalScale: {x: 0.6391, y: 0.6391, z: 0.6391}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1676,6 +1677,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c4a5cf116381424d8b7942da334d353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1309602253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309602248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4fd39cb19b9e4394a0a4f320005ddf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1364846280
