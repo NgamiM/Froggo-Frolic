@@ -38,15 +38,14 @@ public class Timers : MonoBehaviour
 		
 				TimerOn = false;
 			}
+			if (Timeleft < 0)
+			{
+				SceneManager.LoadScene(sceneName);
+			}
 		}
+		
 	}
-	void FixedUpdate()
-	{
-		if (Timeleft == lastCount)
-		{
-			SceneManager.LoadScene(sceneName);
-		}
-	}
+	
 
 	void updateTimer(float currentTime)
 	{
