@@ -34,7 +34,7 @@ public class Timers : MonoBehaviour
 			}
 			else
 			{
-				FixedUpdate();
+				
 		
 				TimerOn = false;
 			}
