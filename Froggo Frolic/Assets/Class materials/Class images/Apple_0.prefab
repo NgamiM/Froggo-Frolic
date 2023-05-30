@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -8906352018633874545}
   - component: {fileID: -6995477461316207056}
   - component: {fileID: 1208629325452653824}
+  - component: {fileID: -3906074736579812896}
   m_Layer: 0
   m_Name: Apple_0
   m_TagString: Untagged
@@ -184,3 +185,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObjectName: Fall (32x32) (1)
   hideObjectName: Fall (32x32) (1)
+--- !u!114 &-3906074736579812896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6577656705352199398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466bab250d5e8dd4ea92ec9972fc2caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObjectName: Fall (32x32) (1)
+  showObjectName: End (Pressed) (64x64)_0
