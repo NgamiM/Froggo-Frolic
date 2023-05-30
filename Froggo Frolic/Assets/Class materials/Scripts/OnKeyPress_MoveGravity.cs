@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OnKeyPress_MoveGravity : MonoBehaviour
 {
-        public string jumpAnime = "";
+    public string jumpAnime = "";
     //public string downAnime = "";
     public string rightAnime = "";
     //public string leftAnime = "";

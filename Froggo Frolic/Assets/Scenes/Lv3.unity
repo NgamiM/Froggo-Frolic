@@ -1153,7 +1153,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -1163,7 +1163,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Timer:'
+  m_Text: 'Time:'
 --- !u!222 &135386526
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2151,7 +2151,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'HighScore:'
+  m_Text: 'Score:'
 --- !u!222 &341283300
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2978,8 +2978,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 304.4, y: 171.12}
-  m_SizeDelta: {x: 50.9288, y: 27.7516}
+  m_AnchoredPosition: {x: 316.58487, y: 171.12}
+  m_SizeDelta: {x: 75.2985, y: 27.7516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &591867965
 MonoBehaviour:
@@ -3021,7 +3021,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -3577,6 +3577,7 @@ GameObject:
   - component: {fileID: 673153444}
   - component: {fileID: 673153443}
   - component: {fileID: 673153442}
+  - component: {fileID: 673153445}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3650,6 +3651,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &673153445
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673153441}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9669960e415ea604d81fb0784634df79, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &688669247
 GameObject:
   m_ObjectHideFlags: 0
@@ -4220,6 +4317,14 @@ GameObject:
   - component: {fileID: 771540073}
   - component: {fileID: 771540072}
   - component: {fileID: 771540083}
+  - component: {fileID: 771540091}
+  - component: {fileID: 771540090}
+  - component: {fileID: 771540089}
+  - component: {fileID: 771540088}
+  - component: {fileID: 771540087}
+  - component: {fileID: 771540086}
+  - component: {fileID: 771540085}
+  - component: {fileID: 771540084}
   m_Layer: 0
   m_Name: Run (32x32)_0
   m_TagString: Untagged
@@ -4713,6 +4818,118 @@ MonoBehaviour:
   throwX: 4
   throwY: 8
   offsetY: 1
+--- !u!114 &771540084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771540071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4017251c6f446b589996dee5ad4f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObjectName: Kiwi_0 (4)
+  collectSFX: {fileID: 771540074}
+--- !u!114 &771540085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771540071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4017251c6f446b589996dee5ad4f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObjectName: Kiwi_0 (14)
+  collectSFX: {fileID: 771540074}
+--- !u!114 &771540086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771540071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4017251c6f446b589996dee5ad4f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObjectName: Kiwi_0 (13)
+  collectSFX: {fileID: 771540074}
+--- !u!114 &771540087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771540071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4017251c6f446b589996dee5ad4f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObjectName: Kiwi_0 (12)
+  collectSFX: {fileID: 771540074}
+--- !u!114 &771540088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771540071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4017251c6f446b589996dee5ad4f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObjectName: Kiwi_0 (11)
+  collectSFX: {fileID: 771540074}
+--- !u!114 &771540089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771540071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4017251c6f446b589996dee5ad4f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObjectName: Kiwi_0 (10)
+  collectSFX: {fileID: 771540074}
+--- !u!114 &771540090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771540071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4017251c6f446b589996dee5ad4f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObjectName: Kiwi_0 (9)
+  collectSFX: {fileID: 771540074}
+--- !u!114 &771540091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771540071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4017251c6f446b589996dee5ad4f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObjectName: Kiwi_0 (8)
+  collectSFX: {fileID: 771540074}
 --- !u!1 &793976008
 GameObject:
   m_ObjectHideFlags: 0
@@ -5212,6 +5429,7 @@ GameObject:
   - component: {fileID: 839627895}
   - component: {fileID: 839627898}
   - component: {fileID: 839627897}
+  - component: {fileID: 839627899}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -5306,6 +5524,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2036a95343663d340bbd70cae58aa35f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &839627899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839627893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ba0bbc816daa5439679a112be05ccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lastCount: -1
+  sceneName: GameOver
 --- !u!1 &848283233
 GameObject:
   m_ObjectHideFlags: 0
